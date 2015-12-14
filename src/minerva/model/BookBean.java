@@ -13,8 +13,6 @@ public class BookBean {
 	private String publisher;
 	private int genre;
 	private String availability;
-	private String query;
-	private String type;
 	
 	
 	public int getVolume() {
@@ -82,19 +80,6 @@ public class BookBean {
 	}
 	public void setAvailability(String availability) {
 		this.availability = availability;
-	}
-	
-	public String getQuery() {
-		return query;
-	}
-	public void setQuery(String query) {
-		this.query = query;
-	}
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
 	}
 	
 }

@@ -47,8 +47,8 @@ public class DeleteAndEditNewsProcessServlet extends HttpServlet {
 				
 				int id = Integer.parseInt(request.getParameter("id"));
 				
-				BookBean bb = SQLOperations.searchBook(id, connection);
-				request.setAttribute("book", bb);
+				NewsBean nb = SQLOperations.searchNews(id, connection);
+				request.setAttribute("news", nb);
 				
 				dispatcher = getServletContext().getRequestDispatcher("/admineditnews.jsp");
 				

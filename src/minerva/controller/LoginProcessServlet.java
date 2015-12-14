@@ -49,7 +49,6 @@ public class LoginProcessServlet extends HttpServlet {
 			isValid = authLogin(userInput, passInput);
 			if(isValid < 2){
 				session.setAttribute("username", userInput);
-				session.setAttribute("password", passInput);
 			}else{
 				System.out.println("Invalid Credentials");
 			}

@@ -9,7 +9,7 @@ public interface SQLCommands {
 	
 	String ADD_RELATION = "insert into relation(accNum, genreId) values (?, ?)";
 	
-	String EDIT_BOOK = "update books set accNum = ?, class = ?, author = ?, bookTitle = ?, edition = ?, "
+	String EDIT_BOOK = "update books set class = ?, author = ?, bookTitle = ?, edition = ?, "
 			+ "volume = ?, pages = ?, publisher = ?, year = ?, availability = ? "
 			+ "where accNum = ?";
 	
@@ -32,7 +32,7 @@ public interface SQLCommands {
 			
 	String LIST_NEWS = "select * from news where isActive";
 	
-	
+	String SEARCH_NEWS = "select * from news where newsId = ? and isActive";
 	
 	String DELETE_FEEDBACK = "UPDATE feedbacks SET isActive = 0 where feedbackMessages=?";
 
@@ -40,9 +40,6 @@ public interface SQLCommands {
 	//CLIENT SQL COMMANDS
 	
 	String CLIENT_SEND_FEEDBACK = "INSERT INTO feedbacks (idNumber, feedbackMessages, feedbackDate, isActive) VALUES (?, ?, ?, 1)";
-	
-	//SEARCH QUERIES
-	
 	
 	
 }

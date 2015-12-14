@@ -2,12 +2,8 @@ package minerva.controller;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -58,13 +54,11 @@ public class editbooks extends HttpServlet implements SQLCommands {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-
-		long EditBook = Long.parseLong(request.getParameter("accNum"));
-		
+		int accNum = Integer.parseInt(request.getParameter("accountNum"));
 		
 		try{
 			
-			long accNum = Long.parseLong(request.getParameter("accNum"));
+			
 			String Class = request.getParameter("class");
 		      String author = request.getParameter("author");
 		      String bookTitle = request.getParameter("bookTitle");
@@ -76,20 +70,17 @@ public class editbooks extends HttpServlet implements SQLCommands {
 		      int genre = Integer.parseInt(request.getParameter("genre"));
 		      String availability = request.getParameter("availability");
 		      
-		      System.out.println(Class);
-		      
 		      PreparedStatement pst = connection.prepareStatement(EDIT_BOOK);
-		      pst.setLong(1, accNum);
-		      pst.setString(2, Class);
-		      pst.setString(3, author);
-		      pst.setString(4, bookTitle);
-		      pst.setString(5, edition);
-		      pst.setInt(6, volume);   
-		      pst.setLong(7, pages);
-		      pst.setString(8, publisher);
-		      pst.setLong(9, year);      
-		      pst.setString(10, availability);
-		      pst.setLong(11, EditBook);
+		      pst.setString(1, Class);
+		      pst.setString(2, author);
+		      pst.setString(3, bookTitle);
+		      pst.setString(4, edition);
+		      pst.setInt(5, volume);   
+		      pst.setLong(6, pages);
+		      pst.setString(7, publisher);
+		      pst.setLong(8, year);      
+		      pst.setString(9, availability);
+		      pst.setInt(10, accNum);
 		      
 		      pst.executeUpdate();
 		      
@@ -97,7 +88,7 @@ public class editbooks extends HttpServlet implements SQLCommands {
 		      PreparedStatement pstmt = connection.prepareStatement(EDIT_RELATION);
 		           
 		      pstmt.setInt(1, genre);
-		      pstmt.setLong(2, EditBook);
+		      pstmt.setInt(2, accNum);
 		      
 		      pstmt.executeUpdate();
 		      

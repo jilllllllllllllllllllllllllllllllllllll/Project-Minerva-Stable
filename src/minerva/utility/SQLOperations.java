@@ -12,6 +12,8 @@ public class SQLOperations implements SQLCommands {
 
 	private static Connection connection;
 	
+	private SQLOperations() {}
+	
 	private static Connection getDBConnection() {
 		
 		try {
@@ -325,6 +327,40 @@ public class SQLOperations implements SQLCommands {
 		}
 		
 		
+		
+		public static NewsBean searchNews(int id, Connection connection) {
+			
+			NewsBean nb = new NewsBean();
+			
+			try {
+				
+				PreparedStatement pst = connection.prepareStatement(SEARCH_NEWS);
+				
+				pst.setInt(1, id);
+				
+				ResultSet rs = pst.executeQuery();
+				
+				while (rs.next()) {
+					
+					nb.setNewsTitle(rs.getString("newsTitle"));
+					nb.setNewsMessage(rs.getString("newsMessage"));
+
+				}
+				
+			} catch (SQLException sqle) {
+				
+				System.out.println("SQLException - searchBooks: " + sqle.getMessage());
+				
+				return nb;
+				
+			}
+			
+			return nb;
+			
+		}
+		
+		
+		
 		//------CLIENT------
 		//------DELETE COLLECTION-------
 		
@@ -363,26 +399,5 @@ public class SQLOperations implements SQLCommands {
 			return updated;
 			
 		}
-		
-		//------SearchResults-------
-//		public static ResultSet viewResults(Connection connection) {
-//			
-//			ResultSet rs = null;
-//			
-//			try {
-//				
-//				Statement stmt = connection.createStatement();
-//				rs = stmt.executeQuery(VIEW_RESULTS);
-//				
-//			} catch (SQLException sqle) {
-//				
-//				System.out.println("SQLException - viewResults: " + sqle.getMessage());
-//				
-//				return rs;
-//				
-//			}
-//			
-//			return rs;
-//			
-//		}
+	
 }

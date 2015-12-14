@@ -28,7 +28,7 @@
 		<div class="wrapperMax">
 			<nav>
 				<div class="logoContainer">
-					<a href="http://www.iacademy.edu.ph/site/"><img src="assets/img/logo-full.png"></a>
+					<a href="adminbrowse.jsp"><img src="assets/img/logo-full.png"></a>
 				</div>
 <!-- 				<div class="linkContainer"> -->
 <!-- 					<ol> -->
@@ -70,10 +70,10 @@
 			<form method="post" action="loginprocess.html">
 				<p>Sign in with your iACADEMY Library account:</p>
 				<div class="username">
-					<input type="text" placeholder="Username" name="inputStudentId">
+					<input type="text" placeholder="Username" name="inputStudentId" required="required">
 				</div>
 				<div class="password">	
-					<input type="password" placeholder="Password" name="inputPassword">
+					<input type="password" placeholder="Password" name="inputPassword" required="required">
 				</div>
 				<div class="cookie">
 					<input type="checkbox"><label>Remember Me</label>

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" import="java.sql.*" import="javax.servlet.http.HttpSession"%>
     
+    
 <jsp:useBean id="view" type="java.sql.ResultSet" scope="request"/>
     
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -26,7 +27,45 @@
 </head>
 <body>
 
-
+<section class="wrapperFull nav">
+		<div class="wrapperMax">
+			<nav>
+				<div class="logoContainer">
+					<a href="clientmain.jsp"><img src="assets/img/logo-full.png"></a>
+				</div>
+				<div class="linkContainer">
+					<ol class="admin">
+						<ul class="search">
+							<a>SEARCH</a>
+							<ul class="menu arrow_box">
+								<li>
+									<form action="searchprocess.html" method="post">
+										<input name="generalSearch" id="generalSearch" type="text" placeholder="Search"><button><i type="submit" class="fi-magnifying-glass"></i></button>
+									</form>
+								</li>
+							</ul>
+						</ul>
+						<ul class="students">
+							<a>ACCOUNT</a>
+							<ul class="menu arrow_box">
+								<li><a href="clientnewsdisplay.jsp">News</a></li>
+								<li><a href="viewcollection.html">Collection</a></li>
+								<li><a href="#">History</a></li>
+								<li><a href="#">Change Password</a></li>
+								<li><a href="login.jsp">Logout</a></li>
+							</ul>
+						</ul>
+						<ul class="library">
+							<a href="clientbrowse.jsp">BROWSE</a>
+						</ul>
+						<ul class="library">
+							<a href="clientfeedback.jsp">FEEDBACK</a>
+						</ul>
+					</ol>
+				</div>
+			</nav>
+		</div>
+	</section>
 
 
 
@@ -80,14 +119,18 @@
 						Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/temp-opac-db", "root", "");
 						String genreNames = "";
 					
-						String query = "insert into search_history (idNumber, accNum) values (?, ?))";
+						String query = "insert into search_history (`idNumber`, `accNum`) values (?, ?)";
 						String id = session.getAttribute("username").toString();
 						
-						PreparedStatement pstmt = connection.prepareStatement(query);
-						pstmt.setString(1, id);
-						pstmt.setLong(2, view.getLong("accNum"));
-						
-						pstmt.executeQuery();
+						if (view.absolute(1)) {
+							
+							PreparedStatement pstmt = connection.prepareStatement(query);
+							pstmt.setString(1, id);
+							pstmt.setInt(2, view.getInt("accNum"));
+							
+							pstmt.executeUpdate();
+							
+						}
 						
 						
 					%>
@@ -102,7 +145,7 @@
 									+ "inner join genre on genre.genreId = relation.genreId "
 									+ "where relation.accNum = ?");
 							
-							pst.setLong(1, view.getLong("accNum"));
+							pst.setInt(1, view.getInt("accNum"));
 							ResultSet rs = pst.executeQuery();
 							
 					while(rs.next()){ 
@@ -114,7 +157,7 @@
 					
 					%>
 					
-					<form action="collection.html?id=<%= view.getLong("accNum") %>" method="post">
+					<form action="collection.html?id=<%= view.getInt("accNum") %>" method="post">
 					
 					<div class="information">
 						<div class="row">
@@ -122,7 +165,7 @@
 								<label>Account Number:</label>
 							</div>
 							<div class="col">
-								<p><%=view.getLong("accNum") %></p>
+								<p><%=view.getInt("accNum") %></p>
 							</div>
 						</div>
 						<div class="row">
