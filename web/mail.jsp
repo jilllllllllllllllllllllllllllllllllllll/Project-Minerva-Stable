@@ -28,63 +28,24 @@
 		<div class="wrapperMax">
 			<nav>
 				<div class="logoContainer">
-					<a href="adminbrowse.jsp"><img src="assets/img/logo-full.png"></a>
+					<a href="http://www.iacademy.edu.ph/site/"><img src="assets/img/logo-full.png"></a>
 				</div>
-<!-- 				<div class="linkContainer"> -->
-<!-- 					<ol> -->
-<!-- 						<ul class="library"> -->
-<!-- 							<a href="#">LIBRARY</a> -->
-<!-- 							<ul class="menu arrow_box"> -->
-<!-- 								<li><p>Home</p></li> -->
-<!-- 								<li><a href="#">Go to Home</a></li> -->
-<!-- 								<li><p>Materials</p></li> -->
-<!-- 								<li><a href="#">View All</a></li> -->
-<!-- 								<li><a href="#">View Recent Acquisitions</a></li> -->
-<!-- 								<li><a href="#">View Pending Materials</a></li> -->
-<!-- 								<li><a href="#">View Borrowed Materials</a></li> -->
-<!-- 								<li><p>Announcements</p></li> -->
-<!-- 								<li><a href="#">View All</a></li> -->
-<!-- 							</ul> -->
-<!-- 						</ul> -->
-<!-- 						<ul class="students"> -->
-<!-- 							<a href="#">STUDENTS</a> -->
-<!-- 							<ul class="menu arrow_box"> -->
-<!-- 								<li><p>Students</p></li> -->
-<!-- 								<li><a href="#">View All</a></li> -->
-<!-- 								<li><p>Account</p></li> -->
-<!-- 								<li><a href="#">View Account Status</a></li> -->
-<!-- 								<li><a href="#">View Materials Borrowed</a></li> -->
-<!-- 								<li><a href="#">Logout</a></li> -->
-<!-- 							</ul> -->
-<!-- 						</ul> -->
-<!-- 						<ul><button><a href="#"><i class="fi-torso"></i></a></button></ul> -->
-<!-- 						<ul><button><a href="#"><i class="fi-magnifying-glass"></i></a></button></ul> -->
-<!-- 					</ol> -->
-<!-- 				</div> -->
 			</nav>
 		</div>
 	</section>
 
 	<main class="body loginPage">
 		<div class="formContainer">
-			<form method="post" action="loginprocess.html">
-				<p>Sign in with your iACADEMY Library account:</p>
+			<form method="post" action="mail.html">
+				<p>Enter Your Username</p>
 				<div class="username">
-					<input type="text" placeholder="Username" name="inputStudentId" required="required">
+					<input type="text" placeholder="Username" name="inputStudentId">
 				</div>
-				<div class="password">	
-					<input type="password" placeholder="Password" name="inputPassword" required="required">
-				</div>
-				<div class="cookie">
-					<input type="checkbox"><label>Remember Me</label>
-				</div>
-				<button type="submit">Sign In</button>
-				<div class="account">
-<!-- 					<a href="#">How do I create an account?</a> -->
-					<a href="mail.jsp">Forgot password?</a>
-				</div>
+
+				<button type="submit">Submit</button>
+
 			</form>
-		</div>
+			</div>
 	</main>
 
 	<section class="wrapperFull footer">
