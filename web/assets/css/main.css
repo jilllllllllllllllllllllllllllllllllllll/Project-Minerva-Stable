@@ -1,0 +1,503 @@
+body, p, ol, ul, li, button, input {padding: 0; margin: 0; list-style: none;}
+img {max-width: 100%; max-height: 100%;}
+button {cursor: pointer; border-radius: 5px;}
+p, span, a, button, label, li {font-family: 'Lato', sans-serif; text-decoration: none; line-height: 14px; color: #484848;}
+p:hover, span:hover, a:hover, button:hover, label:hover, li:hover,
+p:focus, span:focus, a:focus, button:focus, label:focus, li:focus {text-decoration: none;}
+.row {margin: 0;}
+body {color: #555;}
+* {box-sizing: border-box;}
+
+.mobile {display: none;}
+.table {min-width: 1200px;}
+.control .sort {display: none;}
+.col {border: 1px solid #014fb3 !important; margin-top: 2px; }
+
+main.body {position: relative; max-width: 1200px; margin: 0 auto; padding-top: 50px; background: #FFF;}
+
+.wrapperFull.nav p, .wrapperFull.nav span, .wrapperFull.nav a, .wrapperFull.nav button, .wrapperFull.nav label {color: #FFF;}
+.wrapperFull.nav {position: fixed; background: #014fb3; height: 50px; width: 100%; margin: 0 auto; z-index: 98; border-bottom: 4px #004195 solid; box-sizing: border-box;}
+.wrapperFull .wrapperMax {max-width: 1200px; width: 100%; margin: 0 auto;}
+.wrapperFull .wrapperMax nav {height: 50px; overflow: auto;}
+.wrapperFull .wrapperMax nav > div {float: left;}
+.wrapperFull .wrapperMax nav .logoContainer {width: 30%;}
+.wrapperFull .wrapperMax nav .logoContainer img {display: block; max-height: 45px;}
+.wrapperFull .wrapperMax nav .linkContainer {width: 70%; height: inherit;}
+.wrapperFull .wrapperMax nav .linkContainer ol {overflow: auto; float: right; width: 100%; max-width: 325px; height: inherit;}
+.wrapperFull .wrapperMax nav .linkContainer ol > ul {float: right; width: 33.33%; text-align: center; max-width: 78px; height: inherit; background: none; cursor: pointer;}
+.wrapperFull .wrapperMax nav .linkContainer ol.admin {max-width: 400px;}
+.wrapperFull .wrapperMax nav .linkContainer ol.admin > ul {width: 25%;}
+.wrapperFull .wrapperMax nav .linkContainer ol > ul > ul {position: absolute; background: #FFF; max-width: 180px; width: 100%; border: 1px solid #CCC; top: 50px; display: none;}
+.wrapperFull .wrapperMax nav .linkContainer ol > ul > ul li {text-align: left; line-height: 14px;}
+.wrapperFull .wrapperMax nav .linkContainer ol > ul > ul li p {font-size: 12px; color: #484848; line-height: 14px; padding: 8px 10px 5px; border-top: 1px solid #CCC;}
+.wrapperFull .wrapperMax nav .linkContainer ol > ul > ul li a {display: inline-block; color: #484848; transition: .2s; width: 100%; box-sizing: border-box; padding: 3px 10px 3px 25px; font-size: 10px;}
+.wrapperFull .wrapperMax nav .linkContainer ol > ul > ul li a:hover {color: #FFF; background: #29668f;}
+.wrapperFull .wrapperMax nav .linkContainer ol ul.search ul.menu {max-width: 25%; right: 0;}
+.wrapperFull .wrapperMax nav .linkContainer ol ul.search ul.menu li form {max-width: 90%; margin: 0 auto; overflow: auto;}
+.wrapperFull .wrapperMax nav .linkContainer ol ul.search ul.menu li form input {width: 80%; padding: 10px; box-sizing: border-box; margin: 10px auto; float: left; height: 41px;}
+.wrapperFull .wrapperMax nav .linkContainer ol ul.search ul.menu li form button {position: relative; left: -2px; height: 41px; width: 20%; background: #347ab8; border: none; margin: 10px auto; display: block; float: left; border-radius: 0;}
+.wrapperFull .wrapperMax nav .linkContainer ol ul.search ul.menu li form button:hover {background: #003a84;}
+.wrapperFull .wrapperMax nav .linkContainer ol > ul > a {display: inline-block; font-size: 12px; margin: 18px 0;}
+
+.wrapperFull.footer {width: 100%; border-top: 10px solid #131313; background: url(../img/footer_pl.png) no-repeat top center #1D1D1D;}
+.wrapperFull.footer .wrapperMax {max-width: 1000px;}
+.wrapperFull .wrapperMax footer {padding-bottom: 50px;}
+.wrapperFull .wrapperMax footer .linkContainer {overflow: auto;}
+.wrapperFull .wrapperMax footer .linkContainer .block {float: left; width: 25%; margin-top: 50px;}
+.wrapperFull .wrapperMax footer .linkContainer .block ol li {color: #CCC;}
+.wrapperFull .wrapperMax footer .linkContainer .block ol li a {color: #CCC;}
+.wrapperFull .wrapperMax footer .linkContainer .block ol li a:hover {color: #FFF;}
+.wrapperFull .wrapperMax footer .linkContainer .block ol li:nth-child(1) {margin: 25px 0; font-size: 16px; font-weight: bold;}
+.wrapperFull .wrapperMax footer .linkContainer .block ol li:nth-child(1) a:hover {color: #888;}
+.wrapperFull .wrapperMax footer .linkContainer .block ol li {font-size: 14px; margin: 10px;}
+.wrapperFull .wrapperMax footer .linkContainer .mid.block .social {margin-top: 20px;}
+.wrapperFull .wrapperMax footer .linkContainer .mid.block .social a i {font-size: 50px; margin: 0 20px 10px 0; color: #888;}
+.wrapperFull .wrapperMax footer .linkContainer .mid.block .social a i:hover {color: #FFF;}
+.wrapperFull .wrapperMax footer .copyright.block {height: 50px; margin-top: 40px; border-top: #888 solid 1px;}
+.wrapperFull .wrapperMax footer .copyright.block .messageContainer {margin: 20px 0; overflow: auto;}
+.wrapperFull .wrapperMax footer .copyright.block .messageContainer p {color: #CCC; font-size: 12px; width: 50%; float: left;}
+.wrapperFull .wrapperMax footer .copyright.block .messageContainer p:nth-child(2) {text-align: right;}
+
+main {padding-bottom: 100px;}
+
+main.loginPage .formContainer {padding: 100px 0;}
+main.loginPage .formContainer form {max-width: 600px; margin: 0 auto; border: #CCC solid 1px; padding: 50px 50px 30px; text-align: center; border-radius: 5px;}
+main.loginPage .formContainer form p {font-weight: bold; font-size: 18px; margin-bottom: 10px;}
+main.loginPage .formContainer form input {width: 100%; padding: 10px; box-sizing: border-box; margin: 10px auto;}
+main.loginPage .formContainer form button {padding: 10px; background: #014fb3; border: none; color: #FFF; width: 100%; max-width: 140px; margin-top:15px;}
+main.loginPage .formContainer form button:hover {background: #003a84;}
+main.loginPage .formContainer form .cookie {text-align: right;}
+main.loginPage .formContainer form .cookie input {width: auto; margin: 5px 10px 0 0;}
+main.loginPage .formContainer form .account {margin-top: 30px; overflow: auto;}
+main.loginPage .formContainer form .account a {font-size: 12px;}
+main.loginPage .formContainer form .account a:nth-child(1) {float: left;}
+main.loginPage .formContainer form .account a:nth-child(2) {float: right;}
+main.loginPage .formContainer form .account a:hover {color: #3c8dbc; text-decoration: underline;}
+
+main.addBookPage {max-width: 1024px; padding-top: 100px;}
+main.addBookPage .divWrapper {overflow: auto; margin: 0 auto; max-width: 800px;}
+main.addBookPage .divWrapper .left.block .formContainer {margin-top: 50px;}
+main.addBookPage .divWrapper .left.block .formContainer form input, 
+main.addBookPage .divWrapper .left.block .formContainer form select,
+main.addBookPage .divWrapper .left.block .formContainer form textarea {width: 100%; padding: 10px; box-sizing: border-box; margin: 10px auto;}
+main.addBookPage .divWrapper .left.block .formContainer p {font-size: 20px;}
+main.addBookPage .divWrapper .left.block .formContainer form {text-align: center;}
+main.addBookPage .divWrapper .left.block .formContainer form .author {overflow: auto;}
+main.addBookPage .divWrapper .left.block .formContainer form .author input {float: left; width: 47.5%}
+main.addBookPage .divWrapper .left.block .formContainer form .author input:nth-child(2) {margin-left: 5%;}
+main.addBookPage .divWrapper .left.block .formContainer form .edition {overflow: auto;}
+main.addBookPage .divWrapper .left.block .formContainer form .edition input {float: left; width: 30%;}
+main.addBookPage .divWrapper .left.block .formContainer form .edition input:nth-child(2) {margin-left: 5%;}
+main.addBookPage .divWrapper .left.block .formContainer form .edition input:nth-child(3) {margin-left: 5%;}
+main.addBookPage .divWrapper .left.block .formContainer form .publication input {float: left; width: 30%;}
+main.addBookPage .divWrapper .left.block .formContainer form .publication input:nth-child(2) {margin: 10px 5%;}
+main.addBookPage .divWrapper .left.block .formContainer form .publication select {float: left; width: 30%; height: 42px;}
+main.addBookPage .divWrapper .left.block .formContainer form button {padding: 10px; background: #014fb3; border: none; color: #FFF; width: 100%; max-width: 250px; margin-top: 15px;}
+main.addBookPage .divWrapper .left.block .formContainer form button:hover {background: #003a84;}
+
+main.addNewsPage {max-width: 1024px; padding-top: 100px;}
+main.addNewsPage .divWrapper {overflow: auto; margin: 0 auto; max-width: 800px;}
+main.addNewsPage .divWrapper .left.block .formContainer {margin-top: 50px;}
+main.addNewsPage .divWrapper .left.block .formContainer form input, 
+main.addNewsPage .divWrapper .left.block .formContainer form select,
+main.addNewsPage .divWrapper .left.block .formContainer form textarea {width: 100%; padding: 10px; box-sizing: border-box; margin: 10px auto;}
+main.addNewsPage .divWrapper .left.block .formContainer form textarea:nth-child(2) {height: 100px; resize: none;}
+main.addNewsPage .divWrapper .left.block .formContainer form textarea:nth-child(3) {height: 300px; resize: none;}
+main.addNewsPage .divWrapper .left.block .formContainer p {font-size: 20px;}
+main.addNewsPage .divWrapper .left.block .formContainer form {text-align: center;}
+main.addNewsPage .divWrapper .left.block .formContainer form button {padding: 10px; background: #014fb3; border: none; color: #FFF; width: 100%; max-width: 250px; margin-top: 15px;}
+main.addNewsPage .divWrapper .left.block .formContainer form button:hover {background: #003a84;}
+
+main.mainPage .divWrapper {width: 100%; height: 500px; background: url(../img/hp_lib.png) top right no-repeat; border-radius: 5px; margin-top: 100px;}
+main.mainPage .divWrapper .left.block {height: 100%; background: #FFF; width: 75%; border-right: 10px solid #014fb3;}
+main.mainPage .divWrapper .left.block .welcome {height: 70%;}
+main.mainPage .divWrapper .left.block .welcome p {width: 90%;}
+main.mainPage .divWrapper .left.block .welcome p:nth-child(1) {font-size: 34px; font-weight: bold; line-height: 26px; padding-bottom: 15px; border-bottom: 2px #014fb3 solid;}
+main.mainPage .divWrapper .left.block .welcome p:nth-child(2) {font-size: 14px; margin: 15px 0 0 15px; line-height: 30px; text-align: justify;}
+main.mainPage .divWrapper .left.block .quickNav {overflow: auto; height: 30%; width: 90%;}
+main.mainPage .divWrapper .left.block .quickNav .quick {float: left; width: 33.33%; text-align: center; transition: .2s;}
+main.mainPage .divWrapper .left.block .quickNav .quick:hover {background: #014fb3;}
+main.mainPage .divWrapper .left.block .quickNav .quick a {line-height: 24px;}
+main.mainPage .divWrapper .left.block .quickNav .quick a:hover {color: #FFF; }
+main.mainPage .divWrapper .left.block .quickNav .quick a div {padding: 25px 0; text-transform: uppercase;}
+main.mainPage .divWrapper .left.block .quickNav .quick a div i {display: block; font-size: 72px;}
+
+/*main.browsePage {padding-top: 100px;}
+main.browsePage .recentAcquisitions {padding-bottom: 50px; border-bottom: 3px solid #014fb3;}
+main.browsePage .recentAcquisitions .carousel.slide {height: 300px;}
+main.browsePage .recentAcquisitions .carousel-control.left,
+main.browsePage .recentAcquisitions .carousel-control.right {background: none;}
+main.browsePage .recentAcquisitions .carousel.slide .carousel-inner .item .listContainer {overflow: hidden;}
+main.browsePage .recentAcquisitions .carousel.slide .carousel-inner .item .listContainer .list.col {float: left; width: 33.33%; text-align: center;}
+main.browsePage .recentAcquisitions .carousel.slide .carousel-inner .item .listContainer .list.col img {max-width: 250px;}
+main.browsePage .recentAcquisitions .carousel.slide .carousel-inner .item .listContainer .list.col p {line-height: 18px;}
+main.browsePage .recentAcquisitions .carousel.slide .carousel-inner .item .listContainer .list.col p:nth-child(2) {font-weight: bold;}
+main.browsePage .recentAcquisitions .header p:nth-child(1) {font-size: 20px; line-height: 20px;}
+main.browsePage .recentAcquisitions .header p:nth-child(2) {font-size: 12px;}
+main.browsePage .control {margin-top: 25px; overflow: auto;}
+main.browsePage .control .header {float: left; width: 50%;}
+main.browsePage .control .sort {float: left; width: 50%; text-align: right;}
+main.browsePage .control .sort select {width: 100%; max-width: 200px;}
+main.browsePage .control .header p {font-size: 20px;}
+main.browsePage .browseList {margin-top:25px;}
+main.browsePage .browseList .itemRow {overflow: auto; border-left: 1px solid #888; border-top: 1px solid #888;}
+main.browsePage .browseList .itemRow .col {float: left; border-right: 1px solid #888;}
+main.browsePage .browseList .itemRow .col:nth-child(1) {width: 35%;}
+main.browsePage .browseList .itemRow .col:nth-child(2) {width: 20%;}
+main.browsePage .browseList .itemRow .col:nth-child(3) {width: 15%; text-align: center;}
+main.browsePage .browseList .itemRow .col:nth-child(4) {width: 15%; text-align: center;}
+main.browsePage .browseList .itemRow .col:nth-child(5) {width: 15%; text-align: center;}
+main.browsePage .browseList .itemRow:nth-child(1) .col {font-weight: bold; text-align: center; font-size: 16px;}
+main.browsePage .browseList .itemRow:nth-last-child(1) {border-bottom: 1px solid #888;}*/
+
+main.browsePage {padding-top: 100px;}
+main.browsePage .control {margin-top: 25px; overflow: auto;}
+main.browsePage .control .header {float: left; width: 50%;}
+main.browsePage .control .sort {float: left; width: 50%; text-align: right;}
+main.browsePage .control .sort select {width: 100%; max-width: 200px;}
+main.browsePage .control .header p {font-size: 20px; line-height: 20px;}
+main.browsePage .table {margin-top: 20px;}
+main.browsePage .table p,
+main.browsePage .table a {line-height: 28px; margin: 0 5px;}
+main.browsePage .table .row {overflow: auto; border-top: solid 1px #888;}
+main.browsePage .table .row:nth-last-child(1) {border-bottom: solid 1px #888;}
+main.browsePage .table .row .col {float: left; border-left: solid 1px #888; padding: 5px; text-align: center;}
+main.browsePage .table .row .col:nth-last-child(1) {border-right: solid 1px #888;}
+
+main.browsePage {overflow-x: scroll;}
+main.browsePage .table {min-width: 1200px;} 
+main.browsePage .table .row .col {border: none !important;}
+main.browsePage .table .row .col:nth-child(1) {width: 10%;}
+main.browsePage .table .row .col:nth-child(2) {width: 20%;}
+main.browsePage .table .row .col:nth-child(3) {width: 30%;}
+main.browsePage .table .row .col:nth-child(4) {width: 20%;}
+main.browsePage .table .row .col:nth-child(5) {width: 10%;}
+main.browsePage .table .row .col:nth-child(6) {width: 10%;}
+
+main.browsePage .table .row.head .col p,
+main.browsePage .table .row.head .col a {display: block; font-weight: bold; text-align: center;}
+
+main.browsePage.client .table .row .col:nth-child(1) {width: 20%;}
+main.browsePage.client .table .row .col:nth-child(2) {width: 20%;}
+main.browsePage.client .table .row .col:nth-child(3) {width: 30%;}
+main.browsePage.client .table .row .col:nth-child(4) {width: 30%;}
+main.browsePage.client .table .row .col:nth-child(5) {display: none;}
+main.browsePage.client .table .row .col:nth-child(6) {display: none;}
+
+main.recentAcquisitionsPage .control {margin-top: 25px; overflow: auto;}
+main.recentAcquisitionsPage .control .header {float: left; width: 50%;}
+main.recentAcquisitionsPage .control .sort {float: left; width: 50%; text-align: right;}
+main.recentAcquisitionsPage .control .sort select {width: 100%; max-width: 200px;}
+main.recentAcquisitionsPage .control .header p {font-size: 20px;}
+main.recentAcquisitionsPage .browseList {margin-top:25px; overflow-x: scroll;}
+main.recentAcquisitionsPage .browseList .itemRow {overflow: auto; border-left: 1px solid #888; border-top: 1px solid #888;}
+main.recentAcquisitionsPage .browseList .itemRow .col {float: left; border-right: 1px solid #888; padding: 5px;}
+main.recentAcquisitionsPage .browseList .itemRow .col:nth-child(1) {width: 40%;}
+main.recentAcquisitionsPage .browseList .itemRow .col:nth-child(2) {width: 20%;}
+main.recentAcquisitionsPage .browseList .itemRow .col:nth-child(3) {width: 10%; text-align: center;}
+main.recentAcquisitionsPage .browseList .itemRow .col:nth-child(4) {width: 10%; text-align: center;}
+main.recentAcquisitionsPage .browseList .itemRow .col:nth-child(5) {width: 10%; text-align: center;}
+main.recentAcquisitionsPage .browseList .itemRow .col:nth-child(6) {width: 10%; text-align: center;}
+main.recentAcquisitionsPage .browseList .itemRow:nth-child(1) .col {font-weight: bold; text-align: center; font-size: 16px;}
+main.recentAcquisitionsPage .browseList .itemRow:nth-last-child(1) {border-bottom: 1px solid #888;}
+
+main.advancedSearchPage {padding: 100px 0;}
+main.advancedSearchPage .search {padding-bottom: 30px;}
+main.advancedSearchPage .search form {margin: 0 auto; max-width: 100%;}
+main.advancedSearchPage .search form input[type="text"] {width: 70%; padding: 10px; box-sizing: border-box; margin: 10px auto 25px; border: 1px #014fb3 solid; display: inline-block;}
+main.advancedSearchPage .search form button {height: 43px; background: #014fb3; border: none; color: #FFF; width: 30%; margin: 15px 0 0 -4px; display: inline-block; border-radius: 0px;}
+main.advancedSearchPage .search form button:hover {background: #003a84;}
+main.advancedSearchPage .search form .query {max-width: 600px; margin: 0 auto;}
+main.advancedSearchPage .search form .filters {overflow: auto; border: 1px solid #014fb3; padding: 15px; margin-bottom: 15px;}
+main.advancedSearchPage .search form .filters p {font-size: 14px; font-weight: bold; margin-bottom: 5px;}
+main.advancedSearchPage .search form .filters .block {width: 15%; float: left;}
+main.advancedSearchPage .search form .filters .block > p {padding-bottom: 10px; margin-bottom: 10px; border-bottom: #CCC solid 1px;}
+main.advancedSearchPage .search form .filters .right.block {width: 50%; overflow: auto;}
+main.advancedSearchPage .search form .filters .right.block .divider {float: left; width: 50%;}
+main.advancedSearchPage .search form .filters .last.block {width: 20%;}
+main.advancedSearchPage .search form .filters .block .year select {display: inline-block;}
+main.advancedSearchPage .search form .filters .block .year label {display: block; margin: 8px 0;}
+main.advancedSearchPage .search form .filters .block .year label:nth-child(5) {margin-top: 20px;}
+main.advancedSearchPage .search form .filters .block .year input {padding: 5px; margin: 0; border-color: #888;}
+main.advancedSearchPage .search form .filters .block .genre select {display: inline-block;}
+main.advancedSearchPage .search form .filters .block .genre label {display: block; margin: 0px 0 8px;}
+main.advancedSearchPage .search form .filters .block label {font-weight: normal; margin-left: 5px;}
+main.advancedSearchPage .control {margin-top: 25px; overflow: hidden;}
+main.advancedSearchPage .control .header {float: left; width: 50%;}
+main.advancedSearchPage .control .sort {float: left; width: 50%; text-align: right;}
+main.advancedSearchPage .control .sort select {width: 100%; max-width: 200px;}
+main.advancedSearchPage .control .header p {font-size: 20px; line-height: 20px;}
+main.advancedSearchPage .browseList {margin-top:25px; overflow-x: scroll;}
+main.advancedSearchPage .browseList .itemRow {overflow: auto; border-left: 1px solid #888; border-top: 1px solid #888; height: auto;}
+main.advancedSearchPage .browseList .itemRow .col {float: left; border-right: 1px solid #888; padding: 5px; height: inherit;}
+main.advancedSearchPage .browseList .itemRow .col:nth-child(1) {width: 40%;}
+main.advancedSearchPage .browseList .itemRow .col:nth-child(2) {width: 20%;}
+main.advancedSearchPage .browseList .itemRow .col:nth-child(3) {width: 10%; text-align: center;}
+main.advancedSearchPage .browseList .itemRow .col:nth-child(4) {width: 10%; text-align: center;}
+main.advancedSearchPage .browseList .itemRow .col:nth-child(5) {width: 10%; text-align: center;}
+main.advancedSearchPage .browseList .itemRow .col:nth-child(6) {width: 10%; text-align: center;}
+main.advancedSearchPage .browseList .itemRow:nth-child(1) .col {font-weight: bold; text-align: center; font-size: 16px;}
+main.advancedSearchPage .browseList .itemRow:nth-last-child(1) {border-bottom: 1px solid #888;}
+
+main.advancedSearchPage .browseList .table.admin .itemRow .col:nth-child(1) {width: 50%;}
+main.advancedSearchPage .browseList .table.admin .itemRow .col:nth-child(2) {width: 30%;}
+main.advancedSearchPage .browseList .table.admin .itemRow .col:nth-child(3) {width: 10%;}
+main.advancedSearchPage .browseList .table.admin .itemRow .col:nth-child(4) {width: 10%;}
+
+main.advancedSearchPage .browseList .table.client .itemRow .col:nth-child(1) {width: 45%;}
+main.advancedSearchPage .browseList .table.client .itemRow .col:nth-child(2) {width: 24%;}
+main.advancedSearchPage .browseList .table.client .itemRow .col:nth-child(3) {width: 15%;}
+main.advancedSearchPage .browseList .table.client .itemRow .col:nth-child(4) {width: 8%;}
+main.advancedSearchPage .browseList .table.client .itemRow .col:nth-child(5) {width: 8%;}
+
+main.materialPage {padding: 150px 0;}
+main.materialPage .blockWrapper {overflow: hidden;}
+main.materialPage .blockWrapper .block {float: left; width: 25%;}
+main.materialPage .blockWrapper .block .wrapper {max-width: 200px;}
+main.materialPage .blockWrapper .block:nth-child(3) {float: right; max-width: 200px;}
+main.materialPage .blockWrapper .block .messageContainer p {font-size: 20px; line-height: 20px;}
+main.materialPage .blockWrapper .block .viewedContainer {max-width: 200px;}
+main.materialPage .blockWrapper .block .viewedContainer .row img {max-width: 100px; margin-top: 20px;}
+main.materialPage .blockWrapper .block .viewedContainer .row {text-align: center;}
+main.materialPage .blockWrapper .block .viewedContainer .row p {line-height: 18px;}
+main.materialPage .blockWrapper .block .viewedContainer .row p:nth-child(2) {font-weight: bold; font-size: 16px;}
+main.materialPage .blockWrapper .block .collectionContainer {max-width: 200px; overflow: hidden;}
+main.materialPage .blockWrapper .block .collectionContainer .row img {max-width: 100px; margin-top: 20px;}
+main.materialPage .blockWrapper .block .collectionContainer .row {text-align: center;}
+main.materialPage .blockWrapper .block .collectionContainer .row p {line-height: 18px;}
+main.materialPage .blockWrapper .block .collectionContainer .row p:nth-child(2) {font-weight: bold; font-size: 16px;}
+
+main.materialPage .blockWrapper .mid.block {width: 50%;}
+main.materialPage .blockWrapper .mid.block img {max-width: 200px;}
+
+main.materialPage .blockWrapper .block .information .row .col {display: inline-block; height: 100%; border: none !important;}
+main.materialPage .blockWrapper .block .information .row .col:nth-child(1) {width: 25%;}
+main.materialPage .blockWrapper .block .information .row .col:nth-child(2) {width: 70%;}
+main.materialPage .blockWrapper .block .container {max-width: 600px; margin: 0 auto; padding: 0px 20px 50px; border: 1px solid #888;}
+main.materialPage .blockWrapper .block .container img {display: block; margin: 0 auto 50px; padding-top: 50px;}
+main.materialPage .blockWrapper .block .container a {padding-top: 10px; display: inline-block;}
+main.materialPage .blockWrapper .block .container a.lend {float: right;}
+main.materialPage .blockWrapper .block .container a:nth-child(2) {margin-left: 10px;}
+
+main.materialPage .feedbackWrapper {max-width: 50%; margin: 50px auto 20px;}
+main.materialPage .feedbackWrapper hr {border-color: #014fb3;}
+main.materialPage .feedbackWrapper .messageList .row {overflow: auto;}
+main.materialPage .feedbackWrapper .messageList .row .user {width: 25%; float: left;}
+main.materialPage .feedbackWrapper .messageList .row .user p {text-align: center;}
+main.materialPage .feedbackWrapper .messageList .row .user p:nth-child(1) {margin-top: 25px; font-weight: bold; font-size: 14px;}
+main.materialPage .feedbackWrapper .messageList .row .user p:nth-child(2) {margin-top: 5px; font-size: 12px;}
+main.materialPage .feedbackWrapper .messageList .row .messageContainer {width: 75%; float: left;}
+main.materialPage .feedbackWrapper .messageList .row .messageContainer .message {border: #014fb3 solid 1px; border-radius: 10px; min-height: 100px;}
+main.materialPage .feedbackWrapper .messageList .row .messageContainer .message p {padding: 10px;}
+main.materialPage .feedbackWrapper .messageCreation {margin-top: 50px;}
+main.materialPage .feedbackWrapper .messageCreation p {font-size: 15px;}
+main.materialPage .feedbackWrapper .messageCreation .formContainer form {text-align: right;}
+main.materialPage .feedbackWrapper .messageCreation .formContainer form textarea {width: 100%; padding: 10px; box-sizing: border-box; margin: 10px auto; resize: none; height: 150px; border-radius: 10px;  border: solid 1px #888;}
+main.materialPage .feedbackWrapper .messageCreation .formContainer form button {height: 43px; background: #014fb3; border: none; color: #FFF; width: 30%; margin: 15px 0; display: inline-block; border-radius: 0px;}
+main.materialPage .feedbackWrapper .messageCreation .formContainer form button:hover {background: #003a84;}
+
+main.materialPage .modal-body .formContainer {margin-top: 20px;}
+main.materialPage .modal-body .formContainer form {margin-top: 20px;}
+main.materialPage .modal-body .formContainer form input, 
+main.materialPage .modal-body .formContainer form select,
+main.materialPage .modal-body .formContainer form textarea {width: 100%; padding: 10px; box-sizing: border-box; margin: 10px auto;}
+main.materialPage .modal-body .formContainer p {font-size: 20px;}
+main.materialPage .modal-body .formContainer form {text-align: center;}
+main.materialPage .modal-body .formContainer form .author {overflow: auto;}
+main.materialPage .modal-body .formContainer form .author input {float: left; width: 47.5%}
+main.materialPage .modal-body .formContainer form .author input:nth-child(2) {margin-left: 5%;}
+main.materialPage .modal-body .formContainer form .edition {overflow: auto;}
+main.materialPage .modal-body .formContainer form .edition input {float: left; width: 30%;}
+main.materialPage .modal-body .formContainer form .edition input:nth-child(2) {margin-left: 5%;}
+main.materialPage .modal-body .formContainer form .edition input:nth-child(3) {margin-left: 5%;}
+main.materialPage .divWrapper .left.block .formContainer form .publication input {float: left; width: 30%;}
+main.materialPage .divWrapper .left.block .formContainer form .publication input:nth-child(2) {margin: 10px 5%;}
+main.materialPage .divWrapper .left.block .formContainer form .publication select {float: left; width: 30%; height: 42px;}
+main.materialPage .modal-body .formContainer form button {padding: 10px; background: #014fb3; border: none; color: #FFF; width: 100%; max-width: 250px; margin-top: 15px;}
+main.materialPage .modal-body .formContainer form button:hover {background: #003a84;}
+
+main.newsPage {padding-top: 150px;}
+main.newsPage p {font-size: 24px; line-height: 24px;}
+main.newsPage .newsContainer {margin-top: 50px;}
+main.newsPage .newsContainer .row {overflow: hidden;}
+main.newsPage .newsContainer .row .col {float: left; width: 30%; margin: 20px 1.66%; border: #CCC solid 1px; border-radius: 10px;}
+main.newsPage .newsContainer .row .col .news {max-width: 90%; margin: 0 auto; padding: 20px; box-sizing: border-box;}
+main.newsPage .newsContainer .row .col .news img {max-width: 250px; display: block; margin: 0 auto;}
+main.newsPage .newsContainer .row .col .news .information {margin-top: 15px;}
+main.newsPage .newsContainer .row .col .news .information p:nth-child(1) {font-size: 14px; font-weight: bold;}
+main.newsPage .newsContainer .row .col .news .information p:nth-child(2) {font-size: 12px; margin-top: 5px; text-align: justify;}
+main.newsPage .newsContainer .row .col .news button {height: 43px; background: #014fb3; border: none; color: #FFF; width: 100%; max-width: 120px; margin: 15px auto; display: block; border-radius: 10px;}
+main.newsPage .newsContainer .row .col .news button:hover {background: #003a84;}
+
+main.addUserPage {max-width: 1024px; padding-top: 100px;}
+main.addUserPage .divWrapper {overflow: auto; margin: 0 auto; max-width: 800px;}
+main.addUserPage .divWrapper .left.block .formContainer {margin-top: 50px;}
+main.addUserPage .divWrapper .left.block .formContainer form input, 
+main.addUserPage .divWrapper .left.block .formContainer form select,
+main.addUserPage .divWrapper .left.block .formContainer form textarea {width: 100%; padding: 10px; box-sizing: border-box; margin: 10px auto; height: 42px; float: left;}
+main.addUserPage .divWrapper .left.block .formContainer p {font-size: 20px;}
+main.addUserPage .divWrapper .left.block .formContainer form {text-align: center;}
+main.addUserPage .divWrapper .left.block .formContainer form button {padding: 10px; background: #014fb3; border: none; color: #FFF; width: 100%; max-width: 250px; margin-top: 15px;}
+main.addUserPage .divWrapper .left.block .formContainer form button:hover {background: #003a84;}
+main.addUserPage .divWrapper .left.block .formContainer form div {overflow: auto;}
+main.addUserPage .divWrapper .left.block .formContainer form .name input {width: 31.66%;}
+main.addUserPage .divWrapper .left.block .formContainer form .name input:nth-child(2) {margin: 10px 2.51%;}
+main.addUserPage .divWrapper .left.block .formContainer form .class input {width: 30%;}
+main.addUserPage .divWrapper .left.block .formContainer form .class select {width: 67.5%; margin-left: 2.5%;}
+
+main.lendPage {max-width: 1024px; padding-top: 100px;}
+main.lendPage .divWrapper {overflow: auto; margin: 0 auto; max-width: 800px;}
+main.lendPage .divWrapper .formContainer {margin-top: 50px;}
+main.lendPage .divWrapper .formContainer form.main .borrower {text-align: left; border-top: 2px solid #CCC; margin-top: 20px; padding-top: 15px;}
+main.lendPage .divWrapper .formContainer form.main .borrower .information label {padding: 15px 0 0; display: block;}
+main.lendPage .divWrapper .formContainer form.main .borrower .information p {line-height: 20px;}
+main.lendPage .divWrapper .formContainer form.main .borrower button {margin: 30px auto 0; display: block;}
+main.lendPage .divWrapper .formContainer form.main .highlight {text-align: left;}
+main.lendPage .divWrapper .formContainer form.main .highlight label {font-size: 16px;}
+main.lendPage .divWrapper .formContainer form.main .highlight p {font-size: 20px; padding-top: 10px;}
+main.lendPage .divWrapper .formContainer form.main .search {overflow: auto;}
+main.lendPage .divWrapper .formContainer form.main .search input {width: 70%; float: left;}
+main.lendPage .divWrapper .formContainer form.main .search button {position: relative; width: 30%; left: -2px; float: left; height: 42px; border-radius: 0; margin: 10px 0;}
+main.lendPage .divWrapper .formContainer form input, 
+main.lendPage .divWrapper .formContainer form select,
+main.lendPage .divWrapper .formContainer form textarea {width: 100%; padding: 10px; box-sizing: border-box; margin: 10px auto;}
+main.lendPage .divWrapper .formContainer form textarea:nth-child(2) {height: 100px; resize: none;}
+main.lendPage .divWrapper .formContainer form textarea:nth-child(3) {height: 300px; resize: none;}
+main.lendPage .divWrapper .formContainer p {font-size: 20px;}
+main.lendPage .divWrapper .formContainer form.main button {padding: 10px; background: #014fb3; border: none; color: #FFF; width: 100%; max-width: 250px; margin-top: 15px;}
+main.lendPage .divWrapper .formContainer form button:hover {background: #003a84;}
+main.lendPage .divWrapper .formContainer form.main .search {overflow: auto;}
+
+main.historyPage {padding: 100px 0 150px;}
+main.historyPage .banner img {display: block; margin: 0 auto;}
+main.historyPage .tabber {margin-top: 69px;}
+main.historyPage .tabber .head {position: absolute; overflow: auto; top: 390px;}
+main.historyPage .tabber .head .tab {display: block; background: #014fb3; border-radius: 20px 20px 0 0; padding: 10px 20px; float: left; cursor: pointer;}
+main.historyPage .tabber .head .tab.active {background: #003a84;}
+main.historyPage .tabber .head .tab p {color: #FFF;}
+main.historyPage .tabber .head .tab:nth-child(2) {margin-left: 2px;}
+main.historyPage .tabber .content {border: 1px solid #014fb3; padding: 20px;}
+main.historyPage .tabber .content.active {display: block;}
+main.historyPage .tabber .viewed {display: none;}
+main.historyPage .tabber .borrowed {display: none;}
+main.historyPage .control {margin-top: 25px; overflow: auto;}
+main.historyPage .control .header {float: left; width: 50%;}
+main.historyPage .control .sort {float: left; width: 50%; text-align: right;}
+main.historyPage .control .sort select {width: 100%; max-width: 200px;}
+main.historyPage .control .header p {font-size: 20px;}
+main.historyPage .historyList {margin-top:25px;}
+main.historyPage .historyList .itemRow {overflow: auto; border-left: 1px solid #888; border-top: 1px solid #888;}
+main.historyPage .historyList .itemRow .col {float: left; border-right: 1px solid #888;}
+main.historyPage .historyList .itemRow .col:nth-child(1) {width: 35%;}
+main.historyPage .historyList .itemRow .col:nth-child(2) {width: 20%;}
+main.historyPage .historyList .itemRow .col:nth-child(3) {width: 15%; text-align: center;}
+main.historyPage .historyList .itemRow .col:nth-child(4) {width: 15%; text-align: center;}
+main.historyPage .historyList .itemRow .col:nth-child(5) {width: 15%; text-align: center;}
+main.historyPage .historyList .itemRow:nth-child(1) .col {font-weight: bold; text-align: center; font-size: 16px;}
+main.historyPage .historyList .itemRow:nth-last-child(1) {border-bottom: 1px solid #888;}
+
+@media screen and (max-width: 959px) {
+	.wrapperFull.nav .wrapperMax,
+	.wrapperFull.footer .wrapperMax {max-width: 900px;}
+	
+	main.body {max-width: 900px; margin: auto 5%;}
+	main.mainPage .divWrapper .left.block .welcome {height: auto;}
+
+	.table {min-width: 1200px;}
+
+	main.advancedSearchPage .search form .filters .mid.block {width: 25%;}
+	main.advancedSearchPage .search form .filters .right.block {width: 65%;}
+	main.advancedSearchPage .search form .filters .right.block .divider {width: 100%;}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	span.mobile {display: inline-block;}
+
+	/*.wrapperFull .wrapperMax nav {overflow: visible;}
+	.wrapperFull .wrapperMax nav .logoContainer {position: relative; z-index: 2;}
+	.wrapperFull .wrapperMax nav .linkContainer {position: absolute; width: 100%; top: 0px; z-index: 1;}
+	.wrapperFull .wrapperMax nav .linkContainer ol.admin {height: auto; background: #014fb3; overflow: visible; max-width: 100%; text-align: right;}
+	.wrapperFull .wrapperMax nav .linkContainer ol.admin i {color: #FFF; font-size: 24px; margin-right: 20px;}
+	.wrapperFull .wrapperMax nav .linkContainer ol.admin ul {width: 100%; float: none; text-align: left; background: #0066e8; max-width: 100%;}
+	.wrapperFull .wrapperMax nav .linkContainer ol.admin ul:nth-child(1) {margin-top: 10px;}*/
+
+	.wrapperFull .wrapperMax nav {overflow: visible;}
+	.wrapperFull .wrapperMax nav .logoContainer,
+	.wrapperFull .wrapperMax nav .linkContainer {width: 100%; float: none; background: #014fb3;}
+	.wrapperFull .wrapperMax nav .logoContainer img {margin: 0 auto;}
+	.wrapperFull .wrapperMax nav .linkContainer ol > ul > ul {top: 95px;}
+	.wrapperFull .wrapperMax nav .linkContainer ol.admin,
+	.wrapperFull .wrapperMax nav .linkContainer ol.user {max-width: 100%;}
+	.wrapperFull .wrapperMax nav .linkContainer ol ul.search ul.menu {max-width: 100%;}
+	.wrapperFull .wrapperMax nav .linkContainer ol.admin > ul {max-width: 25%;}
+	.wrapperFull .wrapperMax nav .linkContainer ol.user > ul {max-width: 33.33%;}
+
+	main.mainPage .divWrapper {height: auto;}
+	main.mainPage .divWrapper .left.block {width: 100%; border: none;}
+	main.mainPage .divWrapper .left.block .welcome p {width: 100%;}
+	main.mainPage .divWrapper .left.block .welcome p:nth-child(1) {line-height: 30px; font-size: 20px; text-align: center;}
+	main.mainPage .divWrapper .left.block .welcome p:nth-child(2) {box-sizing: border-box; margin: 0; padding: 20px;}
+
+	main.mainPage .divWrapper .left.block .quickNav {margin: 0 auto;}
+	main.mainPage .divWrapper .left.block .quickNav .quick {width: 100%;}
+
+	main.materialPage {padding: 150px 0 75px;}
+
+	main.browsePage .control .header,
+	main.browsePage .control .sort {float: none; width: 100%;}
+	main.browsePage .control .sort select {max-width: 100%;}
+	main.browsePage .control .header {line-height: 20px;}
+	main.browsePage .control .sort {margin-top: 20px; text-align: left;}
+	main.browsePage .table .row.head {display: none;}
+	main.browsePage .table .row .col {float: none;}
+	main.browsePage .table .row .col p span {margin-right: 10px;}
+	main.browsePage .table .row .col {float: none; border-left: solid 1px #888;}
+	main.browsePage .table .row .col:nth-last-child(1) {border-right: solid 1px #888;}
+	main.browsePage .table .row .col:nth-child(1),
+	main.browsePage .table .row .col:nth-child(2),
+	main.browsePage .table .row .col:nth-child(3),
+	main.browsePage .table .row .col:nth-child(4) {width: 100%; border-right: solid 1px #888;}
+	main.browsePage .table .row .col:nth-child(5),
+	main.browsePage .table .row .col:nth-child(6) {width: 50%; float: right; border-top: solid 1px #888; text-align: center;}
+	main.browsePage .table .row .col:nth-child(5) {border-right: solid 1px #888; border-left: 0;}
+	main.browsePage .table .row .col:nth-child(6) {border-right: 0;}
+	main.browsePage.client .table .row .col:nth-child(1),
+	main.browsePage.client .table .row .col:nth-child(2),
+	main.browsePage.client .table .row .col:nth-child(3),
+	main.browsePage.client .table .row .col:nth-child(4) {width: 100%; border-right: solid 1px #888;}
+	main.browsePage.client .table .row .col:nth-child(5),
+	main.browsePage.client .table .row .col:nth-child(6) {width: 50%; float: right; border-top: solid 1px #888; text-align: center;}
+	main.browsePage.client .table .row .col:nth-child(5) {border-right: solid 1px #888; border-left: 0;}
+	main.browsePage.client .table .row .col:nth-child(6) {border-right: 0;}
+
+	main.materialPage .blockWrapper .left.block {display: none;}
+	main.materialPage .blockWrapper .right.block {max-width: 90%; width: 90%; margin-top: 20px; float: none; margin: 20px auto; overflow: auto;}
+	main.materialPage .blockWrapper .right.block .collectionContainer,
+	main.materialPage .blockWrapper .block .wrapper {max-width: 100%;}
+	main.materialPage .blockWrapper .right.block .collectionContainer .row {width: 50%; float: left;}
+	main.materialPage .blockWrapper .mid.block {width: 90%; margin: 0 auto; float: none;}
+	main.materialPage .feedbackWrapper {max-width: 90%;}
+
+	main.newsPage .newsContainer .row .col {float: none; width: 100%; margin: 10px 0 0 0;}
+
+	.wrapperFull .wrapperMax footer .linkContainer {overflow: hidden;}
+	.wrapperFull .wrapperMax footer .linkContainer .block {width: 100%; text-align: center; margin-top: 20px;}
+	.wrapperFull .wrapperMax footer .linkContainer .block ol li:nth-child(1) {margin: 10px auto;}
+	.wrapperFull .wrapperMax footer .copyright.block {margin-top: 20px;}
+	.wrapperFull .wrapperMax footer .copyright.block .messageContainer p {width: 100%; text-align: center; padding: 5px 10px;}
+	.wrapperFull .wrapperMax footer .copyright.block .messageContainer p:nth-child(2) {text-align: center;}
+	.wrapperFull .wrapperMax footer .linkContainer .mid.block .social a i {margin: 0 20px 0 0;}
+
+	main.advancedSearchPage .search form .filters .left.block,
+	main.advancedSearchPage .search form .filters .mid.block  {width: 100%;}
+	main.advancedSearchPage .search form .filters .right.block {width: 70%; margin-top: 20px;}
+	main.advancedSearchPage .search form .filters .last.block {width: 30%; margin-top: 20px;}
+}
+
+@media screen and (max-width: 479px) {
+	main.mainPage .divWrapper .left.block .welcome p:nth-child(1) {font-size: 18px;}
+	.wrapperFull .wrapperMax nav .linkContainer ol > ul > ul {max-width: 155px;}
+	.wrapperFull .wrapperMax footer {padding-bottom: 60px;}
+}

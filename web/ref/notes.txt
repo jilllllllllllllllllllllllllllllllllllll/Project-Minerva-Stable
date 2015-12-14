@@ -1,0 +1,46 @@
+Library
+ > Materials
+ 	> View All
+ 	> View Recent Acquisitions
+ 	> View Pending Materials
+ 	> View Borrowed Materials
+
+ > Announcements
+
+ Students
+ > View All
+
+Footer
+> iSIMS
+> iACADEMY
+> Facebook, Blog
+
++Pages 
+How to sign up
+Recover password
+View Materials
+View Students
+
+Sprint 3 Checklist:
+	> Trace pages via Java materials provided
+	> Create UI, be responsove
+	> Trace functionalities and implement
+
+Pages to do:
+	> Home - Done
+	> Login - Done
+	> Add Book - Done
+	> Advanced Search - Done
+	> Recent Acquisitions - Done
+	> Pending Acquisitions - Done
+	> News - In Progress
+	> Add News - Done
+	> Browse - Done
+	> Contact 
+	> FAQ
+	> Collection 
+	> Lend - In Progress
+	> Material Information - Done
+
+Functionalities:
+	Collection drag&drop
